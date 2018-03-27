@@ -2,11 +2,29 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <title>Fetch API</title>
   </head>
   <body>
-    <button id="getText">Get Text</button>
+    <div class="container">
+      <h1 class="display-4 mb-4">Fetch API Sandbox</h1>
+      <div class="d-flex">
+        <button id="getText" class="btn btn-primary mr-4">Get Text</button>
+        <button id="getUsers" class="btn btn-success mr-4">Get JSON Users</button>
+        <button id="getPosts" class="btn btn-warning mr-4">Get API Data</button>
+      </div>
+      <hr>
+      <div id="output"></div>
+      <form id="addPost">
+        <div class="form-group">
+          <input type="text" id="title" class="form-control" placeholder="Title">
+        </div>
+        <div class="form-group">
+          <textarea id="body" class="form-control" placeholder="Body"></textarea>
+        </div>
+        <input class="btn btn-secondary" type="submit" value="Submit">
+      </form>
+    </div>
 
     <script src="scripts/client.js" charset="utf-8"></script>
   </body>
